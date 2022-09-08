@@ -1,0 +1,598 @@
+  body {
+    padding: 0;
+  }
+
+  body img{
+    display:none;
+  }
+
+  #wrapper{
+    margin: 0;
+    background-color: #ffffff;
+    font-family: 'Share Tech Mono', monospace;
+    
+  }
+
+  /* HEADER */
+  
+  header {
+    background-color: #ffffff;
+    display:block;
+  }
+  
+  header img {
+    display:block;
+    float: left;
+    margin: -4rem 0.2rem 0 0;
+    padding-bottom: 0.3rem;
+    width: 40%;
+    height: auto;
+  }
+
+  header a {
+    color:#6f6f6f;
+    float: right;
+    margin-top: -2rem;
+    margin-right: 1.5rem;
+    font-size:18px;
+  }
+
+  header a:hover{
+    color:#2b6da8;
+  }
+
+  a#welcome{
+    float: right;
+    margin-top: -4rem;
+    margin-right: 0.5rem;
+    text-decoration: none; 
+    font-size: 18px;
+    color: #333;
+  }
+
+  a#welcome:hover{
+    color:#2b6da8;
+  }
+
+  #search{
+    width: 15%;
+    height: auto;
+    float: right;
+    margin-top: 2rem;
+    margin-right: -10%;
+  }
+
+  /* NAVIGATION */
+
+  nav{
+    display:block;
+    background-color: #3a3a3a;
+    margin: 5rem 0 0 0;
+  }
+
+  ul{
+    margin-left:-2rem;
+  }
+
+  li{
+    list-style-type: none;  
+    padding: 1rem 0; 
+    display:inline-block;
+    margin-right: 2%;
+  }
+
+  nav a{
+    text-decoration: none; 
+    color:#ffffff;
+  }
+  
+  nav a:hover {
+    background-color: #a6cbeb;
+    color: #3a3a3a;
+    padding: 1rem 0;
+  }
+
+  li.active a {
+    background-color: #5fa3de;
+    color: #333;
+    padding: 1rem 0;
+  }
+  
+  /* MAIN */
+
+h1{
+    font-size: 23px; 
+}
+
+h2{
+  font-size: 19px; 
+}
+
+/* ----- home page -----*/
+
+.description{
+    color:#2479c4;
+    display:block;
+    position:absolute;
+    margin-top:-0.6rem;
+}
+
+.description h2{
+    font-size: 16px;
+    margin-bottom:0;
+}
+
+.description ul{
+    margin:0;
+    padding:0;
+}
+
+.description li{
+    font-size: 14px;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction: column;
+}
+
+main img{
+    display:block;
+    width:90%;
+    height: auto;
+    margin-bottom:1rem;
+}
+
+#button{
+    margin:1rem 30%;
+    width:40%;
+    height: auto;
+}
+
+.reviews h2{
+    font-size:20px;
+}
+
+.reviews li{
+    margin: -0.5rem auto;
+}
+
+.upgrades h2{
+    font-size: 20px;
+}
+
+.upgrades img{
+ width:30%;
+ height: 70%;
+ background-color: #5fa3de;
+ padding: 0.5rem 3rem;
+ border:1px solid #6f6f6f;
+ margin:0;
+}
+
+.upgrades a{
+    color:#3d3d3d;
+    text-align: center;
+    padding:0;
+}
+
+.upgrades a:hover{
+    color: #670b99;
+    text-decoration: underline;
+}
+
+#top{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2rem;
+    padding-bottom:0.5rem;
+}
+
+#bottom{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2rem;
+}
+
+/* ----- login page -----*/
+form{
+  padding-right: 50%;
+}
+
+form h1{
+  font-size: 22px;
+}
+
+.col, #down, #down2{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.col{
+  padding:0.5rem 0;
+}
+
+input[type="submit" i] {
+  background-color: #4c96d7;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  margin-right: 60%;
+  font-family: 'Share Tech Mono', monospace;
+} 
+
+a.member{
+  color: #2b6da8;
+  text-decoration: underline;
+  padding-bottom: 0.5rem;
+}
+
+a.member:hover{
+  color:black;
+}
+
+/* ----- vehicle page -----*/
+#vehicle_list li{
+  display:grid;
+  grid-template-rows: 1fr;
+  padding-bottom:0;
+}
+
+#vehicle_list li a{
+  color:black;
+  text-decoration: dotted;
+  text-decoration:underline;
+}
+
+#vehicle_list li a:hover{
+  color:#2b6da8;
+}
+label,col{
+  font-size: 1.1rem;
+}
+
+#span{
+  font-size: 0.85rem;
+  padding: 0.5rem;
+}
+
+/* ----- admin page -----*/
+#admin li{
+  display:block;
+  padding:0.3rem 0;
+}
+
+#classificationList{
+  margin-bottom:1rem;
+}
+
+p#text {
+  font-style: italic;
+  color: #2b6da8;
+}
+
+/* ----- Vehicles classification -----*/
+ /* html{
+  box-sizing: border-box;
+ } */
+ 
+ *, *:before, *:after{
+  box-sizing: inherit;
+ }
+
+ #inv-display{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+ }
+ 
+ #inv-display li{
+  margin-bottom: .5em;
+  border: 1px #2b6da8 solid;
+  list-style-type: none;
+  flex: 1 1 auto;
+ }
+ 
+ #inv-display li img {
+     max-width: 100%;
+     margin-left:5%;
+ } 
+
+ /* ----- Vehicles detailed info -----*/
+#info-img{
+  margin-top:1rem;
+}
+
+#vehicle-detail{
+  margin-left:1rem;
+  margin-bottom: 0;
+  font-size: 26px;
+}
+
+#detail-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 40%;
+}
+
+#tn{
+  margin-top: 1rem;;
+  grid-row: 2;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:0.5rem;
+}
+
+#vehicle-display{
+margin: 0 auto;
+padding-left: 0.5rem;
+grid-row: 1;
+}
+
+#grey, #grey2{
+  background-color: #eaeaea;
+  padding: 0.5rem;
+}
+
+#hideH1{
+  margin-top: 3rem;
+  margin-bottom:0;
+  font-size: 26px;
+}
+
+/* ----- Search page -----*/
+#searching{
+  padding:0.5rem 0;
+}
+
+#searchList{
+  padding-left:2rem;
+}
+
+#searchList li{
+  padding:0;
+}
+
+#searchList img{
+  width:30%;
+  height: auto;
+}
+
+#pagination{
+  text-align: center; 
+  padding-bottom: 1rem;
+}
+
+#pagination div{
+  text-align: center;
+}
+
+#pagination a{
+  text-decoration: none;
+}
+
+#pagination a:hover{
+  color:#2479c4;
+}
+#pagination a:nth-of-type(1){
+  display:none;
+}
+
+#pagination a:nth-last-of-type(2){
+  display:none;
+}
+
+#prev{
+  padding-right: 20%;
+}
+
+#next{
+  padding-left: 20%;
+}
+
+  /* FOOTER */
+
+  footer {
+    background-color: #ffffff;
+    color:#3a3a3a;
+    border-top: 0.2rem solid #3d3d3d;
+    text-align: center;
+  }
+
+  footer p{
+    margin: 0.1rem 0.5rem;
+    font-size:12px;  
+  }
+  
+
+  /* --------------------------Large View--------------------------*/
+  
+  @media only screen and (min-width: 48rem) {
+    header,main,
+    footer {
+      max-width: 64rem;
+      margin: auto;
+    }
+
+    body img{
+      display:block;
+      width: 120%;
+      height:auto;
+    }
+
+    #wrapper{
+      display:block;
+      position:absolute;
+      top:3rem;
+      margin: 0.3rem 15%;
+      border: 0.2rem solid #4c96d7;
+      border-radius: 0.4rem;
+    }
+  
+  /* HEADER */
+    header{
+      margin-top:4.5rem;
+    }
+
+    header img {
+      width: 15%;
+      height: 100%;
+    }
+  
+    header a{
+      font-size: 14px; 
+      margin-right:5%;
+    }
+
+    #search{
+      width: 15%;
+      height: auto;
+      margin-top: 2rem;
+      margin-right: -11%;
+    }
+
+  /* NAV */
+    nav{
+      margin-top:0;
+    }
+
+    /* ----- home page -----*/
+    .description{
+        margin-left:2rem;
+    }
+   
+    #button{
+        display:block;
+        position: absolute;
+        top:16rem;
+        left:2rem;
+        margin:0;
+        width:20%;
+        height: auto;
+    }
+
+    main{
+      padding-left: 1rem;
+    }
+    
+    main img{
+        margin-top:2rem;
+        width:90%;
+        height: auto;
+    }
+
+    .grid{
+        display:grid;
+        grid-template-columns: 45% 1fr;
+        grid-template-rows: 1fr;
+        margin-left:0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .reviews{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-left:3rem;
+    }
+
+    .upgrades{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    /* ----- Vehicles classification -----*/
+    #inv-display {
+      margin-left: 10%;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+    }
+  
+    #inv-display h2{
+      font-size: 1rem;
+    }
+  
+    #inv-display li {
+      max-width: 200px;
+      flex: 1 0 auto;
+      text-align: center;
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 0.5rem;
+    }
+        
+    #inv-display div {
+      width: 100%;
+    }
+
+    /* ----- Vehicles detailed info -----*/
+    #detail-grid{
+      display: grid;
+      grid-template-columns: 15% 1fr;
+      grid-template-rows: 1fr;
+    }
+
+    #hideH1{
+      display:none;
+    }
+
+    #tn {
+      margin:0;
+      grid-row: 1;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 30% 30% 20%;
+      grid-gap:0;
+    }
+
+    #tn img{
+      margin-bottom:0rem;
+    }
+    #tn img:hover{
+      transform: scale(2.5);
+    }
+
+    #info-img{
+      margin-top:0;
+      width:100%;
+      height:auto;
+    }
+
+    #bigger, #bigger2{
+      font-size:20px;
+    }
+
+    #bigger{
+      grid-column: 3;
+    }
+
+    h2#bigger2{
+      display:none;
+    }
+
+    #vehicle-display{
+      margin-top:2rem;
+      grid-column: 2;
+      display: grid;
+      grid-template-columns: 55% 1fr;
+      grid-template-rows: 1fr;
+      grid-gap: 1rem;
+      padding-right:1rem;
+    }
+
+    /* ----- Search page -----*/
+#searching{
+  padding:0.5rem;
+  padding-right: 50%;
+}
+
+#searchList img{
+  width:15%;
+  height: auto;
+  margin-top:0;
+}
+
+
+  }
+
+  /* end of media query */
